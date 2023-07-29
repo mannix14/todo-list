@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background-image: url(chibi2.jpg);
+  background-size: cover;
+}
+
+h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 50px;
+  color: gold;
+  text-shadow: rgb(139, 148, 110) 5px 5px 4px;
+  -webkit-text-stroke: rgb(182, 134, 15) 1px;
+}
+
+h3 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-right: 40px;
+  opacity: 0.4;
+}
+
+.form {
+  position: absolute;
+  top: 30%;
+  box-shadow: 0 5px 8px rgba(57, 107, 63, 0.3);
+  width: 400px;
+  background-color: rgb(240, 232, 148);
+  border-radius: 10px;
+  border: 1px solid rgb(72, 75, 90);
+}
+
+.input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+  border: none;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.input::placeholder {
+  color: lightgray;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+}
+
+.list li {
+  list-style-type: none;
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-top: solid 1px rgb(133, 192, 243);
+  border-color: darkgray;
+  position: relative;
+}
+
+.list li .fa-trash-can {
+  color: red;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.list li .fa-square-check {
+  color: green;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.list li.checked {
+  color: gray;
+  text-decoration: line-through;
+}
+
+.list li.checked .fa-square-check {
+  color: darkgray;
+}
